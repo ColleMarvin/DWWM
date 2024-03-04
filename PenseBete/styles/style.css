@@ -25,6 +25,7 @@ h1, header {
 }
 
 header {
+    background-color: var(--color-bg-primary-secondary);
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;   
@@ -33,6 +34,7 @@ header {
 nav {
     display: flex;
     width: 20%;
+    min-width: 400px;
     justify-content: space-evenly;
 }
 
@@ -41,9 +43,27 @@ main {
     align-self: center;
     display: flex;
     justify-content: center;
+
+    padding: 100px 20px;
+
+    font-size: 1.5em;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: "-";
+    padding: 0 5px;
+}
+
+li > em {
+    font-style: normal;
+    font-weight: 600;
 }
