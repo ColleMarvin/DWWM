@@ -1,0 +1,23 @@
+* {
+    font-size: 1.5em;
+}
+
+footer {
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Lora', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+body {
+    background-color: #C7F6F9;
+}
