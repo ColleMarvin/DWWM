@@ -1,6 +1,6 @@
 :root {
     --color-bg-primary: #E6FDFF;
-    --color-bg-primary-secondary: #DBF9F4;
+    --color-bg-primary-secondary: #cefaf3;
     --color-primary-500: #B07bAC;
     --color-secondary-500: #5F7367;
 }
@@ -42,6 +42,7 @@ main {
     width: 900px;
     align-self: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     padding: 100px 20px;
