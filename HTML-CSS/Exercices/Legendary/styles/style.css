@@ -18,14 +18,14 @@ body {
     margin: auto;
 }
 
-header {    
+header {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10%;
-    
+
     text-transform: uppercase;
     font-size: 1.35em;
     letter-spacing: 1em;
@@ -56,24 +56,25 @@ section {
     gap: 20px;
 }
 
-.intro > p, h2 {
+.intro>p,
+h2 {
     text-align: center;
 }
 
-.intro > h2 {
+.intro>h2 {
     width: fit-content;
     padding: 5px 5px;
 
     border-top: 1px solid #EFE784;
     border-bottom: 1px solid #EFE784;
-    
-    
+
+
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 0.5em;
     /* Pour enlever le letter-spacing après la dernière lettre */
     direction: rtl;
-    text-indent: -0.5em; 
+    text-indent: -0.5em;
 }
 
 p {
@@ -87,7 +88,7 @@ p {
     color: #6CBCB3;
 }
 
-.avengers > h2 {    
+.avengers>h2 {
     text-align: left;
     font-weight: 400;
     font-size: 2.25em;
@@ -96,17 +97,21 @@ p {
     margin-bottom: 0.5em;
 }
 
-.avengers > p {
+.avengers>p {
     color: #3E3838;
 }
 
-.avengers img {
-    margin: 5% 0;
+.avengers-img {
     width: 700px;
-    height: auto;
+    height: 240px;
+    background-image: url(../img/avengers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+    margin: 5% 0;
 }
 
-.date-de-sortie > p {
+.date-de-sortie>p {
     color: #6CBCB3;
     font-weight: 400;
     font-size: 0.9em;
@@ -115,7 +120,7 @@ p {
 
 .star-is-born {
     background-color: #6CBCB3;
-    color:#3E3838;
+    color: #3E3838;
 }
 
 .star-is-born h2 {
@@ -123,12 +128,66 @@ p {
     font-weight: 400;
     font-size: 2.25em;
 
+    margin-bottom: 0.5em;
+}
+
+.star-is-born-img {
+    width: 700px;
+    height: 240px;
+    background-image: url(../img/star.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
+    margin: 5% 0;
+}
+
+.star-is-born .date-de-sortie>p {
+    color: #FFF;
+}
+
+.woman-at-war,
+.woman-at-war p {
+    background-color: #3E3838;
+    color: #FFF;
+}
+
+.woman-at-war h2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.25em;
 
     margin-bottom: 0.5em;
 }
 
-.star-is-born img {
-    width: auto;
-    height: 200px;
-    object-fit: contain;
+.woman-at-war-img {
+    width: 700px;
+    height: 240px;
+    background-image: url(../img/woman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
+    margin: 5% 0;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+
+    width: 960px;
+    margin: auto;
+    padding: 2% 5% 2.5% 5%;
+}
+
+footer img {
+    margin-bottom: 20px;
+}
+
+footer > p {    
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+mark {
+    background-color: transparent;
+    color: #EFE784;
 }
