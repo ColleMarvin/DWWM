@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p, a {
+    background-color: red;
+}
+
+p {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid blue;
+}
+
+a {
+    width: 500px;
+}
