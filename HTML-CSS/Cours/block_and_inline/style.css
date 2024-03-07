@@ -3,16 +3,25 @@
     margin: 0;
 }
 
-p, a {
-    background-color: red;
-}
-
-p {
-    display: inline-block;
+.prems {
+    position: relative;
+    border: 1px solid red; 
     width: 300px;
-    border: 1px solid blue;
+    height: 200px;
 }
 
-a {
-    width: 500px;
+div > div {
+    border: 1px solid blue;
+    position: absolute;
+   
+}
+
+div > section {
+    border: 1px solid green;
+    position: absolute;
+    top: 10px;
+}
+
+h1 {
+    background-color: blue;
 }
