@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    padding: min(3vh,3vw);
+    /* display: flex;
+    justify-content: center; */
+}
+
+.rail {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1vh;
+}
+
+header, footer {
+    height: 150px;
+}
+
+/* Background Colors */
+
+header {
+    background-color: salmon;
+}
+
+aside {
+    background-color: lightgray;
+}
+
+article {
+    background-color: lightyellow;
+}
+
+footer {
+    background-color: lightgreen;
+}
+
+.hero-container {
+    display: flex;
+    gap: 0.5vw;
+}
+
+aside, article {
+    height: 600px;
+}
+
+aside {
+    flex-grow: 1;
+}
+
+article {    
+    flex-grow: 3;
+}
