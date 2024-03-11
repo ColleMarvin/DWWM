@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND COLORS */
+
+body {
+    background-color: lightblue;
+}
+
+.orange {
+    background-color: darkorange;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.grey {
+    background-color: grey;
+}
+
+footer {
+    background-color: green;
+}
+
+/* LAYOUT */
+.rail {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    margin: auto;
+    padding: 2vh 2vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+
+main > *,
+footer {
+    height: 15vh;
+}
+
+main > div:not(.yellow) {
+    display: flex;
+    align-items: stretch;
+    gap: 2vw;
+}
+
+main div div {
+    flex: 150px;
+}

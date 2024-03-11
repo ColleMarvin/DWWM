@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    padding: min(3vh,3vw);
+    /* display: flex;
+    justify-content: center; */
+}
+
+.rail {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2vh;
+}
+
+header, footer {
+    height: 150px;
+}
+
+/* Background Colors */
+
+header {
+    background-color: salmon;
+}
+
+aside {
+    background-color: lightgray;
+}
+
+.p1 {
+    background-color: orange;
+}
+
+.p2 {
+    background-color: darkblue;
+}
+
+.p3 {
+    background-color: mediumaquamarine;
+}
+
+footer {
+    background-color: lightgreen;
+}
+
+.hero-container {
+    display: flex;
+    gap: 0.5vw;
+}
+
+aside, article {
+    height: 560px;
+}
+
+aside {
+    flex-grow: 1;
+}
+
+article {    
+    flex-grow: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article div {
+    min-height: 25%;
+}

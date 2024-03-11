@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*===================*/
+/* BACKGROUND COLORS */
+/*===================*/
+
+.grid {
+    background-color: black;
+}
+
+.item:nth-child(even) {
+    background-color: aqua;
+}
+.item:nth-child(odd):not(:nth-child(5)) {
+    background-color: green;
+}
+
+.item-large {
+    background-color: orange;
+}
+
+/*===================*/
+/*      LAYOUT       */
+/*===================*/
+
+.grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: 1em;
+
+    width: 500px;
+    height: 300px;
+}
+
+.item-large {
+    grid-area: 2 / 1 / span 1 / span 4;
+}

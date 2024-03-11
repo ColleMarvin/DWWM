@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*===================*/
+/* BACKGROUND COLORS */
+/*===================*/
+
+body {
+    background-color: lightblue;
+}
+
+header,
+footer {
+    background-color: aquamarine;
+}
+
+aside {
+    background-color: mediumseagreen;
+}
+
+article {
+    background-color: coral;
+}
+
+div.image {
+    background-color: gold;
+}
+
+/*===================*/
+/*      LAYOUT       */
+/*===================*/
+
+body {
+    padding: min(3vh, 5vw);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+header,
+footer {
+    height: 10vh;
+}
+
+main {
+    height: 650px;
+    display: flex;
+    gap: 2vw;
+}
+
+aside {
+    flex: 1 0 150px;
+}
+
+article {
+    flex-grow: 3;
+
+    padding: 1%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+div.image {
+    width: 150px;
+    aspect-ratio: 1;
+}

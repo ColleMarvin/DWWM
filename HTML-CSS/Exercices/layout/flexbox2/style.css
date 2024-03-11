@@ -1,3 +1,6 @@
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -50,6 +53,11 @@ aside, article {
     height: 600px;
 }
 
+@media (max-width: 800px) {
+    .hero-container {
+        flex-direction: column;
+    }
+}
 aside {
     flex-grow: 1;
 }
