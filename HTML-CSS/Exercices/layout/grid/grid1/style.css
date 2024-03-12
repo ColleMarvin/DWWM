@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    padding: 2vh;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: min(1vw, 50px);
+}
+
+header,
+footer,
+main>* {
+    background-color: #F00;
+}
+
+header,
+footer {
+    min-height: 150px;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 2fr / repeat(4, 1fr);
+    gap: min(1vw, 50px);
+}
+
+aside {
+    grid-area: span 2;
+}
+
+.main-content {
+    grid-area: 2 / 2 / -1 / -1;
+}
+
+.box {
+    width: 100%;
+    aspect-ratio: 1;
+}
