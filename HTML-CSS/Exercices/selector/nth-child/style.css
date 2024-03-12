@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.premiere h2 {
+    background-color: #F00;
+    font-size: 50px;
+}
+
+.premiere p:nth-child(3) {
+    font-size: 50px;
+    color: green;
+}
+
+.deuxieme h2 {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.deuxieme p:first-of-type {
+    color: red;
+}
+
+.premiere p:first-of-type {
+    font-weight: bold;
+    color: brown;
+    font-size: 30px;
+}

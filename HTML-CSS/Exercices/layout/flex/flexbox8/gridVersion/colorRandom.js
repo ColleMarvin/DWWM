@@ -13,8 +13,7 @@ function bgRandomColor(grp) {
 }
 
 
-
-setInterval(bgRandomColor(items), 1000);
+bgRandomColor(items);
 
 // items.forEach((item, i) => {
 //     if (item.className.search('item-large') == -1) {
