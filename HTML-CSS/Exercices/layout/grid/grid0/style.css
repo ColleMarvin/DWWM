@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+.grid-container {
+    padding: 1em;
+
+    display: grid;
+    grid-template: 1fr repeat(2, 2fr) / 1fr repeat(2, 2fr);
+    height: 100vh;
+    gap: 1%;
+
+}
+
+div {
+    border: 1px dotted #000;
+}

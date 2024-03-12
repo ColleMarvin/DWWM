@@ -13,9 +13,9 @@ body {
 
 .rail {
     max-width: 960px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    margin: auto;
     gap: 2vh;
 }
 

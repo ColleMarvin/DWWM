@@ -1,0 +1,70 @@
+:root {
+    --main-bg-color: brown;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*===================*/
+/* BACKGROUND COLORS */
+/*===================*/
+
+.grid {
+    background-color: black;
+}
+
+.item:nth-child(even) {
+    background-color: aqua;
+}
+
+.item:nth-child(odd):not(:nth-child(5)) {
+    background-color: var(--main-bg-color);
+}
+
+.item-large {
+    background-color: orange;
+}
+
+/*===================*/
+/*      LAYOUT       */
+/*===================*/
+
+
+
+/* Column */
+
+.grid {
+    width: 50vw;
+    min-width: 320px;
+    aspect-ratio: 16 / 9;
+
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    gap: min(1vw, 10px);
+
+}
+
+.item-large {
+    grid-area: 1 / 2 / span 4 / span 1;
+}
+
+/* Rows */
+
+/* .grid {
+    width: 50vw;
+    min-width: 320px;
+    aspect-ratio: 16 / 9;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    gap: min(1vw, 10px);
+
+}
+
+.item-large {
+    grid-area: 2 / 1 / span 1 / span 4;
+} */

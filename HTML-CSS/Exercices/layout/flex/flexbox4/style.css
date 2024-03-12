@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -43,13 +43,12 @@ main {
     gap: 5vh;
 }
 
-
-main > *,
+main>*,
 footer {
     height: 15vh;
 }
 
-main > div:not(.yellow) {
+main>div:not(.yellow) {
     display: flex;
     align-items: stretch;
     gap: 2vw;
