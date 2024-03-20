@@ -142,7 +142,9 @@ a {
     background-color: transparent;
 }
 
-/* HEADINGS */
+/*============*/
+/*  HEADINGS  */
+/*============*/
 
 h1,
 h2 {
@@ -166,7 +168,9 @@ h3 {
     line-height: 1.5em;
 }
 
-/* VIGNETTES */
+/*============*/
+/*  VIGNETTE  */
+/*============*/
 
 .vignette-sport {
     width: 470px;
@@ -197,11 +201,9 @@ h3 {
     background-image: url(../img/sky.jpg);
 }
 
-
 /*===========*/
 /*  BUTTONS  */
 /*===========*/
-
 
 .more-info {
     background-color: var(--color-primary);
