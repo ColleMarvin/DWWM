@@ -197,7 +197,11 @@ h3 {
     background-image: url(../img/sky.jpg);
 }
 
-/* BUTTONS */
+
+/*===========*/
+/*  BUTTONS  */
+/*===========*/
+
 
 .more-info {
     background-color: var(--color-primary);
