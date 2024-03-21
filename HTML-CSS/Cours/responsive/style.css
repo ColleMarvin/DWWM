@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  height: 50px;
+}
+.menu .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.menu .item:nth-child(1) {
+  background-color: #c5d5cb;
+}
+.menu .item:nth-child(2) {
+  background-color: #9fa8a3;
+}
+.menu .item:nth-child(3) {
+  background-color: #e3e0cf;
+}
+.menu .item:nth-child(4) {
+  background-color: #c5d5cb;
+}
+.menu .item:nth-child(5) {
+  background-color: #9fa8a3;
+}
+.image {
+  background-image: url(img/Mer.jpg);
+  background-size: cover;
+  height: 450px;
+  width: 800px;
+  margin: auto;
+  margin-top: 2%;
+}
+@media screen and (max-width: 1220px) {
+  .menu {
+    font-size: 2em;
+  }
+  .paragraphe {
+    background-color: aquamarine;
+  }
+  .paragraphe div:nth-child(1) {
+    font-size: 30px;
+    color: red;
+    text-align: justify;
+  }
+  .paragraphe div:nth-child(2) {
+    font-size: 40px;
+    color: purple;
+    text-align: justify;
+    padding: 10px;
+  }
+  .image {
+    background-image: url(img/Mer-medium.jpg);
+    width: 500px;
+    height: 281px;
+    margin-top: 5%;
+    box-shadow: 0 0 0 10px #555, 0 0 0 20px #000, 0 0 0 30px #555;
+  }
+}
