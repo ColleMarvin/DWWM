@@ -17,6 +17,8 @@ body {
 }
 .wrapper h2 {
   text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
 }
 .wrapper header {
   background-image: url(img/header.jpg);
@@ -44,10 +46,16 @@ body {
 .wrapper article *:not(:last-child) {
   margin-bottom: 5%;
 }
+.wrapper article p:first-of-type {
+  line-height: 1.5em;
+}
 .wrapper article img {
   display: block;
   width: 100%;
-  margin: auto;
+  max-width: 600px;
+}
+.wrapper article:not(.intro) :last-child {
+  font-size: 0.7em;
 }
 .wrapper .intro {
   background-color: #3e3838;
@@ -60,16 +68,11 @@ body {
   margin: auto;
   border-bottom: 1px solid #efe784;
   border-top: 1px solid #efe784;
-  margin-bottom: 5%;
   padding: 1% 2%;
+  margin-bottom: 5%;
+  letter-spacing: 0.5em;
   direction: rtl;
   text-indent: -0.5em;
-  font-weight: inherit;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-}
-.wrapper .intro p {
-  line-height: 2em;
 }
 .wrapper .avengers {
   background-color: #fff;
@@ -77,8 +80,6 @@ body {
 }
 .wrapper .avengers h2 {
   color: #6cbcb3;
-  font-weight: 400;
-  text-align: center;
 }
 .wrapper .avengers p:not(:last-child) {
   color: #3e3838;
@@ -89,4 +90,28 @@ body {
 }
 .wrapper .star :last-child {
   color: #FFF;
+}
+.wrapper .woman {
+  background-color: #3e3838;
+  color: #FFF;
+}
+.wrapper .woman img {
+  max-width: 405px;
+}
+@media (min-width: 768px) {
+  .wrapper article {
+    padding: 5%;
+  }
+  .wrapper article:not(.intro) h2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 1%;
+  }
+  .wrapper article p:first-of-type {
+    line-height: 2em;
+  }
+  .wrapper article:not(.intro) :last-child {
+    font-size: 1em;
+  }
 }

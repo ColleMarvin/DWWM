@@ -28,6 +28,8 @@ body {
 
     h2 {
         text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
     }
 
     header {
@@ -57,14 +59,24 @@ body {
 
     article {
         padding: 10%;
+
         *:not(:last-child) {
             margin-bottom: 5%;
+        }
+
+        p:first-of-type {
+            line-height: 1.5em;
         }
 
         img {
             display: block;
             width: 100%;
-            margin: auto;
+            // margin: left;
+            max-width: 600px;
+        }
+
+        &:not(.intro) :last-child {
+            font-size: 0.7em;
         }
     }
 
@@ -79,19 +91,13 @@ body {
             margin: auto;
             border-bottom: 1px solid @my-yellow;
             border-top: 1px solid @my-yellow;
-            margin-bottom: 5%;
             padding: 1% 2%;
+            margin-bottom: 5%;
+
+            letter-spacing: 0.5em;
             // fix for letter-spacing aftre last char
             direction: rtl;
             text-indent: -0.5em;
-
-            font-weight: inherit;
-            letter-spacing: 0.5em;
-            text-transform: uppercase;
-        }
-
-        p {
-            line-height: 2em;
         }
     }
 
@@ -101,8 +107,6 @@ body {
 
         h2 {
             color: @my-blue;
-            font-weight: 400;
-            text-align: center;
         }
 
         p:not(:last-child) {
@@ -113,10 +117,49 @@ body {
     .star {
         background-color: @my-blue;
         color: @my-black;
-        
 
         :last-child {
             color: #FFF;
         }
+    }
+
+    .woman {
+        background-color: @my-brown;
+        color: #FFF;
+
+        img {
+            max-width: 405px;
+        }
+    }
+}
+
+
+// PC display
+
+@media (min-width: 768px) {
+    .wrapper {
+
+        article {
+
+            padding: 5%;
+
+            &:not(.intro) h2 {
+                text-align: left;
+                font-weight: 400;
+                font-size: 2em;
+
+                margin-bottom: 1%;
+
+            }
+
+            p:first-of-type {
+                line-height: 2em;
+            }
+
+            &:not(.intro) :last-child {
+                font-size: 1em;
+            }
+        }
+
     }
 }
