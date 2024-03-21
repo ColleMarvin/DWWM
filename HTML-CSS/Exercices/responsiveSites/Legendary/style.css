@@ -98,9 +98,21 @@ body {
 .wrapper .woman img {
   max-width: 405px;
 }
+.wrapper footer {
+  background-color: #000;
+  padding: 5%;
+  color: #FFF;
+}
+.wrapper footer img {
+  padding-bottom: 2%;
+}
+.wrapper footer a {
+  text-decoration: none;
+  color: #efe784;
+}
 @media (min-width: 768px) {
   .wrapper article {
-    padding: 5%;
+    padding: 5% 15%;
   }
   .wrapper article:not(.intro) h2 {
     text-align: left;
