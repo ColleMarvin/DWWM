@@ -26,6 +26,10 @@ body {
     display: flex;
     flex-direction: column;
 
+    h2 {
+        text-transform: uppercase;
+    }
+
     header {
         background-image: url(./img/header.jpg);
         background-repeat: no-repeat;
@@ -47,6 +51,20 @@ body {
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 0.7em;
+        }
+    }
+
+
+    article {
+        padding: 10%;
+        *:not(:last-child) {
+            margin-bottom: 5%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin: auto;
         }
     }
 
@@ -74,6 +92,31 @@ body {
 
         p {
             line-height: 2em;
+        }
+    }
+
+    .avengers {
+        background-color: #fff;
+        color: @my-blue;
+
+        h2 {
+            color: @my-blue;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        p:not(:last-child) {
+            color: @my-brown;
+        }
+    }
+
+    .star {
+        background-color: @my-blue;
+        color: @my-black;
+        
+
+        :last-child {
+            color: #FFF;
         }
     }
 }
