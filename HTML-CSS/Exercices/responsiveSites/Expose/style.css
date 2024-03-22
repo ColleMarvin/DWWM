@@ -94,7 +94,7 @@ header .hero .hero-text p {
 }
 .galerie {
   background-color: #393939;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 }
 .galerie h2 {
   padding: 2em;
@@ -135,6 +135,40 @@ header .hero .hero-text p {
   color: inherit;
   border-color: #9AB464;
   letter-spacing: 0.1em;
+}
+.nympheas {
+  background-color: #1D1B1B;
+  color: #FFF;
+  padding: 4em 1em;
+}
+.nympheas .bell-icon {
+  width: 96px;
+  aspect-ratio: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFF;
+}
+.nympheas .bell-icon svg {
+  width: 53px;
+  height: 73px;
+}
+.nympheas h2 {
+  color: inherit;
+  text-transform: none;
+  font-size: 1.685em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em 0;
+}
+.nympheas p {
+  font-size: 1.375em;
+  font-weight: 200;
+  line-height: 2em;
+  text-align: center;
+  max-width: 697px;
+  margin: auto;
 }
 @media (min-width: 769px) {
   header nav ul {
