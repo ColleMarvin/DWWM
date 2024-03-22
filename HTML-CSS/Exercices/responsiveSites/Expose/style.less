@@ -229,6 +229,65 @@ header {
     }
 }
 
+.fondateur {
+    background-color: @grey-39;
+    padding: 4em 1em;
+    letter-spacing: 0.23em;
+    font-weight: 700;
+
+    h2 {
+        padding-bottom: 5em;
+        font-size: 1.75em;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        div {
+            max-width: 336px;
+            padding: 7em 1em 2em 1em;
+            position: relative;
+
+
+            background-color: @green;
+            color: #FFF;
+
+            img {
+                position: absolute;
+                top: -67px;
+                left: 50%;
+                translate: -50%;
+            }
+
+            h3 {
+                padding: 0.5em 0 1em 0;
+                font-size: 1.25em;
+                border-top: 1px solid #FFF;
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 300;
+                padding-bottom: 1em;
+            }
+
+            a {
+                background-color: @grey-39;
+                color: #FFF;
+                width: 39px;
+                aspect-ratio: 1;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
 @media (min-width: 769px) {
     header {
         nav {
