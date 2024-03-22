@@ -8,6 +8,22 @@
 body {
   background-color: #ECEFD8;
 }
+h2 {
+  color: #849561;
+  text-transform: uppercase;
+  text-align: center;
+}
+button {
+  padding: 1.5em 3em;
+  border-radius: 0;
+  border: 1px solid;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
 header nav {
   background-color: #ECEFD8;
 }
@@ -55,7 +71,7 @@ header .hero .hero-text p {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  padding-top: 5%;
+  padding: 5% 0;
 }
 .bienvenue h1 {
   color: #393939;
@@ -72,15 +88,53 @@ header .hero .hero-text p {
 }
 .bienvenue button {
   background-color: #849561;
-  padding: 1.5em 3em;
-  border-radius: 0;
-  border: 1px solid #FFF;
+  border-color: #FFF;
   box-shadow: 0 4px 4px #1313134B;
   color: #EED690;
-  letter-spacing: 0.005em;
-  text-transform: uppercase;
-  font-size: 1rem;
+}
+.galerie {
+  background-color: #393939;
+  padding-bottom: 5em;
+}
+.galerie h2 {
+  padding: 2em;
+}
+.galerie .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5em;
+}
+.galerie .container div {
+  background-color: #849561;
+  position: relative;
+  max-width: 316px;
+  padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+  color: #FFF;
+}
+.galerie .container div h3 {
+  padding: 0.5em 3em;
+  font-size: 1.5em;
   font-weight: 700;
+}
+.galerie .container div p {
+  padding: 0 1em;
+  font-size: 1.375em;
+}
+.galerie .container div button {
+  position: absolute;
+  bottom: -1.75em;
+  left: 50%;
+  translate: -50%;
+  background-color: #393939;
+  padding: 1em 2em;
+  color: inherit;
+  border-color: #9AB464;
+  letter-spacing: 0.1em;
 }
 @media (min-width: 769px) {
   header nav ul {

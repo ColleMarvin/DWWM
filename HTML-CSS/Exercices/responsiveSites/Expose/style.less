@@ -5,7 +5,7 @@
 @grey-text: #191A18;
 @green: #849561;
 
-// INITIAL SETUP
+// COMMON SETUP
 
 * {
     box-sizing: border-box;
@@ -20,6 +20,26 @@ body {
 }
 
 // TABLET FIRST
+
+h2 {
+    color: @green;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button {
+    padding: 1.5em 3em;
+
+    border-radius: 0;
+    border: 1px solid;
+
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+}
 
 header {
     nav {
@@ -50,7 +70,7 @@ header {
         background-size: contain;
         width: 100%;
         aspect-ratio: 768 / 560;
-        
+
 
         .hero-text {
             display: flex;
@@ -60,13 +80,13 @@ header {
             width: 100%;
             height: 100%;
             gap: 5%;
-            
-            
+
+
             font-size: 1.75em;
             font-weight: 400;
             letter-spacing: 0.085em;
             color: #FFFFFF;
-            
+
             p {
                 padding: 0 0.25em;
                 border-top: 1px solid #FFF;
@@ -83,15 +103,15 @@ header {
     align-items: center;
     gap: 1em;
 
-    padding-top: 5%;
+    padding: 5% 0;
 
     h1 {
         color: @grey-39;
         font-size: 1.875em;
         font-weight: 700;
     }
-    
-    
+
+
     p {
         max-width: 65%;
 
@@ -103,19 +123,66 @@ header {
     }
 
     button {
-        background-color: @green;  
-        
-        padding: 1.5em 3em;
-        
-        border-radius: 0;
-        border: 1px solid #FFF;
+        background-color: @green;
+        border-color: #FFF;
         box-shadow: 0 4px 4px #1313134B;
-                
         color: #EED690;
-        letter-spacing: 0.005em;
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: 700;
+    }
+}
+
+.galerie {
+    background-color: @grey-39;
+
+    padding-bottom: 5em;
+    
+    h2 {
+        padding: 2em;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 5em;
+
+        div {
+            background-color: @green;
+            position: relative;
+            max-width: 316px;
+            padding-bottom: 4em;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            text-align: center;
+            color: #FFF;
+
+            h3 {
+                padding: 0.5em 3em;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+
+            p {
+                padding: 0 1em;
+                font-size: 1.375em;
+            }
+
+            button {
+                position: absolute;
+                bottom: -1.75em;
+                left: 50%;
+                translate: -50%;
+
+                background-color: @grey-39;
+                padding: 1em 2em;
+
+                color: inherit;
+                border-color: #9AB464;
+                letter-spacing: 0.1em;
+            }
+        }
     }
 }
 
@@ -133,7 +200,7 @@ header {
 
         .hero {
             background-image: url(img/header-bg.png);
-            aspect-ratio: 1440 / 400;            
+            aspect-ratio: 1440 / 400;
         }
     }
 }
