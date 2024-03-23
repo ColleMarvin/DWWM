@@ -250,13 +250,13 @@ header {
 
     .container {
         display: flex;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
         gap: 2em;
 
         div {
-            min-width: 336px;
-            max-width: 462px;
+            max-width: 336px;
             padding: 7em 1em 2em 1em;
             position: relative;
 
@@ -316,11 +316,9 @@ header {
     }
 
     .bienvenue {
-
         p {
             max-width: 618px;
         }
-
     }
 
     .nympheas {
@@ -334,6 +332,14 @@ header {
 
         p {
             font-size: 1em;
+        }
+    }
+
+    .fondateur {
+        .container {
+            div {
+                max-width: 462px;
+            }
         }
     }
 }

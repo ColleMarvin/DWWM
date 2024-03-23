@@ -187,13 +187,13 @@ header .hero .hero-text p {
 }
 .fondateur .container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2em;
 }
 .fondateur .container div {
-  min-width: 336px;
-  max-width: 462px;
+  max-width: 336px;
   padding: 7em 1em 2em 1em;
   position: relative;
   background-color: #849561;
@@ -248,5 +248,8 @@ header .hero .hero-text p {
   }
   .nympheas p {
     font-size: 1em;
+  }
+  .fondateur .container div {
+    max-width: 462px;
   }
 }
