@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.required::after {
+  content: '*';
+  color: red;
+}
+.required::before {
+  content: '-';
+  padding: 0 1em;
+}
+blockquote {
+  width: 80%;
+  padding: 1em;
+  margin: auto;
+  margin-top: 3em;
+  text-indent: 2em;
+  background-color: #DDD;
+  font-style: italic;
+}
+blockquote::before {
+  content: '\201C';
+}
+blockquote::after {
+  content: '\201D';
+}
