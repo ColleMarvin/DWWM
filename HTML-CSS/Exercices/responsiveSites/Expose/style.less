@@ -250,13 +250,14 @@ header {
 
     .container {
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
         gap: 2em;
 
-        div {
+        &>div {
+            min-width: 250px;
             max-width: 336px;
+            flex-shrink: 1;
             padding: 7em 1em 2em 1em;
             position: relative;
 

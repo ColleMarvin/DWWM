@@ -187,19 +187,20 @@ header .hero .hero-text p {
 }
 .fondateur .container {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2em;
 }
-.fondateur .container div {
+.fondateur .container > div {
+  min-width: 250px;
   max-width: 336px;
+  flex-shrink: 1;
   padding: 7em 1em 2em 1em;
   position: relative;
   background-color: #849561;
   color: #FFF;
 }
-.fondateur .container div .photo {
+.fondateur .container > div .photo {
   width: 135px;
   aspect-ratio: 1;
   position: absolute;
@@ -210,23 +211,23 @@ header .hero .hero-text p {
   background-color: transparent;
   background-size: contain;
 }
-.fondateur .container div .photoBradleyGrosh {
+.fondateur .container > div .photoBradleyGrosh {
   background-image: url(img/medium/BradleyGrosh.png);
 }
-.fondateur .container div .photoLauraStegner {
+.fondateur .container > div .photoLauraStegner {
   background-image: url(img/medium/LauraStegner.png);
 }
-.fondateur .container div h3 {
+.fondateur .container > div h3 {
   padding: 0.5em 0 1em 0;
   font-size: 1.25em;
   border-top: 1px solid #FFF;
 }
-.fondateur .container div p {
+.fondateur .container > div p {
   font-size: 1em;
   font-weight: 300;
   padding-bottom: 1em;
 }
-.fondateur .container div a {
+.fondateur .container > div a {
   background-color: #393939;
   color: #FFF;
   width: 39px;
