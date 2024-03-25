@@ -264,11 +264,25 @@ header {
             background-color: @green;
             color: #FFF;
 
-            img {
+            .photo {
+                width: 135px;
+                aspect-ratio: 1;
                 position: absolute;
                 top: -67px;
                 left: 50%;
                 translate: -50%;
+
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-size: contain;
+            }
+
+            .photoBradleyGrosh {
+                background-image: url(img/medium/BradleyGrosh.png);
+            }
+
+            .photoLauraStegner {
+                background-image: url(img/medium/LauraStegner.png);
             }
 
             h3 {
@@ -339,6 +353,20 @@ header {
         .container {
             div {
                 max-width: 462px;
+                padding-top: 8em;
+
+                .photo {
+                    width: 203px;
+                    top: -100px;
+                }
+
+                .photoBradleyGrosh {
+                    background-image: url(img/BradleyGrosh.png);
+                }
+
+                .photoLauraStegner {
+                    background-image: url(img/LauraStegner.png);
+                }
             }
         }
     }

@@ -199,11 +199,22 @@ header .hero .hero-text p {
   background-color: #849561;
   color: #FFF;
 }
-.fondateur .container div img {
+.fondateur .container div .photo {
+  width: 135px;
+  aspect-ratio: 1;
   position: absolute;
   top: -67px;
   left: 50%;
   translate: -50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+}
+.fondateur .container div .photoBradleyGrosh {
+  background-image: url(img/medium/BradleyGrosh.png);
+}
+.fondateur .container div .photoLauraStegner {
+  background-image: url(img/medium/LauraStegner.png);
 }
 .fondateur .container div h3 {
   padding: 0.5em 0 1em 0;
@@ -251,5 +262,16 @@ header .hero .hero-text p {
   }
   .fondateur .container div {
     max-width: 462px;
+    padding-top: 8em;
+  }
+  .fondateur .container div .photo {
+    width: 203px;
+    top: -100px;
+  }
+  .fondateur .container div .photoBradleyGrosh {
+    background-image: url(img/BradleyGrosh.png);
+  }
+  .fondateur .container div .photoLauraStegner {
+    background-image: url(img/LauraStegner.png);
   }
 }
