@@ -248,6 +248,7 @@ header .hero .hero-text p {
   }
   .bienvenue p {
     max-width: 618px;
+    margin-bottom: 2em;
   }
   .nympheas {
     background-color: #1D1B1B;
